@@ -1,0 +1,33 @@
+TuneD is a service that monitors your system and optimizes the
+performance under certain workloads
+
+TuneD is distributed with a number of predefined profiles, which we will
+review a little later in this exercise
+
+Let’s make sure we have the `+tuned+` package installed.
+
+Copy and paste the command below into *> Shell*.
+
+[source,bash]
+----
+dnf list tuned
+----
+
+The output should look similar to this:
+
+We can see `+tuned+` is listed under Installed Packages. We should also
+make sure it is running and enabled:
+
+Copy and paste the command below into *> Shell*.
+
+[source,bash]
+----
+systemctl status tuned
+----
+
+Your output should look similiar to:
+
+From the output above we can determine that it is active (running) and
+that it is enabled so it will start at boot-up time
+
+Let’s move on to the next step

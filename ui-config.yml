@@ -1,0 +1,21 @@
+---
+antora:
+  name: modules
+  dir: www
+  modules:
+    - name: "01-install-tuned"
+      label: "Install Tuned"
+      solveButton: true
+    - name: "02-review-tuned"
+      label: "Review Tuned"
+      solveButton: true
+    - name: "03-custom-tuned"
+      label: "Custom Tuned"
+      solveButton: true
+    - name: "04-activate-tuned"
+      label: "Activate Tuned"
+      solveButton: true
+
+tabs:
+  - name: ">_ terminal"
+    url: /wetty

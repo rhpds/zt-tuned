@@ -1,0 +1,9 @@
+---
+name: modules
+version: master
+
+asciidoc:
+  attributes:
+    lab_name: "Optimizing performance with TuneD profiles"
+    release-version: master
+    page-pagination: true

@@ -1,0 +1,59 @@
+As we mentioned in the beginning, TuneD is distributed with a number of
+predefined profiles.
+
+A profile is a set of rules that defines certain system parameters such
+as disk settings, kernel parameters, network optimization settings, and
+many other aspects of the system.
+
+During the installation, a profile for your system is automatically
+selected based on the system information. For example, it may detect
+that you are a virtual-guest and it will select that profile for you.
+However, you may decide that you would rather run something else that
+has a specific performance or power profile instead.
+
+Let’s take a look at what profiles are included by default:
+
+[source,bash]
+----
+tuned-adm list profiles
+----
+
+It looks like our active profile is `+virtual-guest+` as stated on the
+last line, and there are a handful of profiles available which are
+listed under `+Available profiles+`
+
+The default profiles are stored in a directory under
+`+/usr/lib/tuned/$profilename+`, so lets go ahead and see what the
+virtual-guest profile includes:
+
+[source,bash]
+----
+cat /usr/lib/tuned/virtual-guest/tuned.conf | grep -v \^#
+----
+
+One of the great things about TuneD profiles are the ability to inherit
+tunings from another profile. You will notice that on the output there
+is a line that starts with `+include+`. This means you will bring in all
+the settings for the throughput-performance profile in this
+virtual-guest profile and then update two values `+vm.dirty_ratio+` and
+`+vm.swappiness+` which are defined under the [sysctl] heading
+
+Lets take a look at what is in the `+throughput-performance+` profile
+
+[source,bash]
+----
+cat /usr/lib/tuned/throughput-performance/tuned.conf | grep -v \^#
+----
+
+You will notice that the throughput-performance profile has a lot of
+tunings, including the two mentioned in the virtual-guest profile
+
+The benefit of using include in our profiles is that we can inherit all
+these settings and then just override the few we want to update in our
+new profile
+
+The child profile settings will take precedence over the duplicate
+tunings in the parent profile
+
+Lets move forward with the next step and create our own TuneD profile
+and customize it for our use case
