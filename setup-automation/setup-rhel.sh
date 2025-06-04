@@ -1,11 +1,4 @@
 #!/bin/bash
-while [ ! -f /opt/instruqt/bootstrap/host-bootstrap-completed ]
-do
-    echo "Waiting for Instruqt to finish booting the VM"
-    sleep 1
-done
-
-
 yum remove -y google-rhui-client*
 yum clean all
 
