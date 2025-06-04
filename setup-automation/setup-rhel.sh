@@ -9,8 +9,6 @@ done
 yum remove -y google-rhui-client*
 yum clean all
 
-subscription-manager config --rhsm.manage_repos=1
-subscription-manager register --activationkey=${ACTIVATION_KEY} --org=12451665 --force
 
 dnf -y install tmux
 echo "Adding wheel" > /root/post-run.log
