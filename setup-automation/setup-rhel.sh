@@ -4,11 +4,6 @@ yum clean all
 
 
 dnf -y install tmux
-echo "Adding wheel" > /root/post-run.log
-usermod -aG wheel rhel
-
-echo "setting password" >> /root/post-run.log
-echo redhat | passwd --stdin rhel
 
 #set up tmux so it has to restart itself whenever the system reboots
 
