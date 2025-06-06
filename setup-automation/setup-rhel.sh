@@ -1,10 +1,4 @@
 #!/bin/bash
-yum remove -y google-rhui-client*
-yum clean all
-
-
-dnf -y install tmux
-
 #set up tmux so it has to restart itself whenever the system reboots
 
 #step 1: make a script
@@ -18,7 +12,7 @@ EOF
 
 #step 2: make it executable
 chmod +x ~/startup-tmux.sh
-#step 3: use cron to execute 
+#step 3: use cron to execute
 echo "@reboot ~/startup-tmux.sh" | crontab -
 
 #step 4: start tmux for the lab
