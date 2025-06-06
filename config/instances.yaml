@@ -8,5 +8,3 @@ virtualmachines:
     tags:
       - key: "AnsibleGroup"
         value: "bastions"
-    networks:
-      - default
