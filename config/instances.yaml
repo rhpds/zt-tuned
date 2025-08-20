@@ -1,9 +1,9 @@
 virtualmachines:
   - name: "rhel"
-    image: "rhel-9.5"
+    image: "rhel-10-0-07-09-25-3"
+    bootloader: efi
     memory: "4G"
     cores: 1
-    image_size: "40G"
     packages:
       - git
       - cockpit
