@@ -38,7 +38,8 @@ And that is it! You now have a good understanding of the benefits of
 TuneD and the knowledge to create and use custom and static TuneD
 profiles!
 
-Some more great resources: - [RHEL 9 Monitoring and Performance Guide]
-(https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/monitoring_and_managing_system_status_and_performance/index)
-- [Getting started with TuneD]
+Some more great resources: 
+* [RHEL 9 Monitoring and Performance Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/monitoring_and_managing_system_status_and_performance/index)
+
+* [Getting started with TuneD]
 (https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/monitoring_and_managing_system_status_and_performance/getting-started-with-tuned_monitoring-and-managing-system-status-and-performance)
