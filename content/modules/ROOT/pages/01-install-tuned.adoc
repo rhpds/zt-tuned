@@ -1,3 +1,5 @@
+# Install TuneD
+
 TuneD is a service that monitors your system and optimizes the
 performance under certain workloads
 
@@ -6,7 +8,7 @@ review a little later in this exercise
 
 Let’s make sure we have the `+tuned+` package installed.
 
-Copy and paste the command below into *> Shell*.
+Copy and paste the command below into *>_ terminal*.
 
 [source,bash]
 ----
@@ -18,7 +20,7 @@ The output should look similar to this:
 We can see `+tuned+` is listed under Installed Packages. We should also
 make sure it is running and enabled:
 
-Copy and paste the command below into *> Shell*.
+Copy and paste the command below into *>_ terminal*.
 
 [source,bash]
 ----
