@@ -1,3 +1,5 @@
+# Custom TuneD
+
 Before we start, let’s take a look at what tuned profiles are available
 to install in case there is a better option for Microsoft SQL Server:
 
@@ -43,7 +45,7 @@ mkdir /etc/tuned/mssql-multi
 Next we will create a tuned.conf that includes the mssql profile and
 overrides transparent_hugepages to `+madvise+`
 
-Copy and paste the command below into *> Shell*.
+Copy and paste the command below into *>_ terminal*.
 
 [source,bash]
 ----
