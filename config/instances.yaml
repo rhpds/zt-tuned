@@ -4,6 +4,7 @@ virtualmachines:
     bootloader: efi
     memory: "4G"
     cores: 1
+    image_size: "40G"
     packages:
       - git
       - cockpit
