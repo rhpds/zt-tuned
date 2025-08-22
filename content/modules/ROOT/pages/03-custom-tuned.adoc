@@ -64,7 +64,7 @@ Let’s review our new tuned.conf to ensure it looks correct
 
 [source,bash]
 ----
-
+cat /etc/tuned/profiles/mssql-multi/tuned.conf
 ----
 
 Everything looks good!
