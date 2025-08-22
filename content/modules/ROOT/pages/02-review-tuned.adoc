@@ -30,7 +30,7 @@ virtual-guest profile includes:
 
 [source,bash]
 ----
-cat /usr/lib/tuned/virtual-guest/tuned.conf | grep -v \^#
+cat /usr/lib/tuned/profiles/virtual-guest/tuned.conf | grep -v \^#
 ----
 
 One of the great things about TuneD profiles are the ability to inherit
@@ -44,7 +44,7 @@ Lets take a look at what is in the `+throughput-performance+` profile
 
 [source,bash]
 ----
-cat /usr/lib/tuned/throughput-performance/tuned.conf | grep -v \^#
+cat /usr/lib/tuned/profiles/throughput-performance/tuned.conf | grep -v \^#
 ----
 
 You will notice that the throughput-performance profile has a lot of
