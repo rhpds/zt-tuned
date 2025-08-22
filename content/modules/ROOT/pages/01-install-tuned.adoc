@@ -10,6 +10,13 @@ Let’s make sure we have the `+tuned+` package installed.
 
 Copy and paste the command below into *>_ terminal*.
 
+For ease of use with this lab, we will elevate your user privileges.
+
+[source,bash,run]
+----
+sudo su
+----
+
 [source,bash]
 ----
 dnf list tuned
