@@ -32,8 +32,6 @@ the value of transparent_hugepages
 cat /sys/kernel/mm/transparent_hugepage/enabled
 ----
 
-In the output, it should show the bracket around madvise
-
 And that is it! You now have a good understanding of the benefits of
 TuneD and the knowledge to create and use custom and static TuneD
 profiles!
