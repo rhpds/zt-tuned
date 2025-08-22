@@ -20,7 +20,7 @@ Lets take a look at the contents of our new tuned profile:
 
 [source,bash]
 ----
-cat /usr/lib/tuned/mssql/tuned.conf
+cat /usr/lib/tuned/profiles/mssql/tuned.conf
 ----
 
 You will notice that the mssql profile is using `+include+` to bring in
@@ -39,7 +39,7 @@ First we will create the directory for the new TuneD profile
 
 [source,bash]
 ----
-mkdir /etc/tuned/mssql-multi
+mkdir /etc/tuned/profiles/mssql-multi
 ----
 
 Next we will create a tuned.conf that includes the mssql profile and
@@ -49,7 +49,7 @@ Copy and paste the command below into *>_ terminal*.
 
 [source,bash]
 ----
-cat << EOF > /etc/tuned/mssql-multi/tuned.conf
+cat << EOF > /etc/tuned/profiles/mssql-multi/tuned.conf
 [main]
 summary=MSSQL profile for multi-instance
 include=mssql
@@ -64,7 +64,7 @@ Let’s review our new tuned.conf to ensure it looks correct
 
 [source,bash]
 ----
-cat /etc/tuned/mssql-multi/tuned.conf
+
 ----
 
 Everything looks good!
